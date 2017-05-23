@@ -57,7 +57,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
+		<!--Jackson is a Json Processor. It helps you in converting your objects to json and vice versa-->
+		<!--supports both XML and JSON as document formats-->
+		<!--Data Binding API is used to convert JSON to and from Plain Old Java Object-->
+		<!--Simple Data Binding − It converts JSON to and from Java Maps, Lists, Strings, Numbers, Booleans,
+			and null objects.
+			Full Data Binding − It converts JSON to and from any Java type.
+		  -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -75,6 +82,10 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
 		</dependency>
 	</dependencies>
 </project>

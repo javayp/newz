@@ -14,6 +14,10 @@ public class Newz {
 
 	private Date date;
 
+	
+	public Newz() {
+		super();
+	}
 
 	public int getId() {
 		return id;

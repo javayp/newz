@@ -2,7 +2,6 @@ package com.nds.apicontroller;
 
 
 import java.util.Collection;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -20,7 +19,8 @@ public class NdsCrudController {
 	@Autowired
 	private NewzCrudService newzCrudService;
 
-	@GetMapping(value="/nds/read", produces=MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value="/nds/read", 
+	produces={MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
 	public Collection<Newz> ndsRead(){
 		return newzCrudService.getAllNewz();
 	}
